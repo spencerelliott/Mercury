@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources> 
+	<string name="app_name">Mercury</string>
+	<string name="empty_repo_list">No repositories available. Press the menu button and select \'Add\' to add a new repository.</string>
+	<string name="add_repo_name">Repository name</string>
+	<string name="add_repo_title">Add repository</string>
+	<string name="add_repo_label_repo_type">Repository type:</string>
+	<string name="add_repo_label_authentication">Authentication:</string>
+	<string name="add_repo_username_hint">Username</string>
+	<string name="add_repo_password_hint">Password</string>
+	<string name="add_repo_save_button">Save</string>
+	<string name="add_repo_discard_button">Discard</string>
+	<string name="add_repo_url_hint">eg. http://myrepo.com:80/hg</string>
+	<string name="add_repo_url_label">URL:</string>
+	<string name="add_repo_key_hint">Token</string>
+	<string name="add_repo_missing_user_pass">Missing username</string>
+	<string name="add_repo_missing_url">Missing URL</string><string name="add_repo_missing_ssh">Missing SSH key</string><string name="add_repo_missing_repo_name">Missing repository name</string><string name="add_repo_adding_error_title">Error</string><string name="settings_title">Settings</string>
+	
+	<string name="preferences_notifications">Notifications</string>
+	<string name="preferences_notifications_summary_on">Notifications will be sent to the notification bar</string><string name="preferences_notification_summary_off">Notifications will not be sent to the notification bar</string><string name="preferences_notification_interval">Interval</string>
+	<string name="preferences_notification_interval_summary">Interval between notifications</string><string-array name="preferences_interval_entries"><item>10 minutes</item>
+		<item>20 minutes</item>
+		<item>30 minutes</item>
+	<item>1 hour</item>
+</string-array>
+	<string-array name="preferences_interval_values"><item>600000</item>
+		<item>1200000</item>
+		<item>1800000</item>
+	<item>3600000</item>
+</string-array>
+	<string name="preferences_cache">Enable caching</string>
+	<string name="preferences_cache_summary_on">Changeset information will be cached on the device</string>
+	<string name="preferences_cache_summary_off">Changeset information will be loaded from the web each time</string>
+	<string-array name="preferences_cache_max_entries"><item>15</item>
+		<item>30</item>
+		<item>50</item>
+		<item>100</item>
+		<item>150</item>
+		<item>All</item>
+	</string-array>
+	<string-array name="preferences_cache_max_values"><item>15</item>
+		<item>30</item>
+		<item>50</item>
+		<item>100</item>
+		<item>150</item>
+		<item>9999</item>
+	</string-array>
+	<string name="preferences_cache_max">Max changesets</string>
+	<string name="preferences_cache_max_summary">Maximum amount of changesets to store on the device</string>
+<string name="preferences_encryption">Enable encryption</string><string name="preferences_encryption_summary_on">Changesets will be encrypted on the device</string><string name="preferences_version">Version</string><string name="preferences_version_information">Version Information</string><string name="preferences_encryption_summary_off">Changesets will not be encrypted on the device</string><string-array name="preferences_led_colours_entries"><item>Red</item>
+<item>Green</item>
+<item>Blue</item>
+<item>Magenta</item>
+<item>Yellow</item>
+<item>Cyan</item>
+</string-array><string-array name="preferences_led_colours_values"><item>-65536</item>
+<item>-16711936</item>
+<item>-16776961</item>
+<item>-65281</item>
+<item>-256</item>
+<item>-16711681</item>
+</string-array><string name="preferences_led_colour_title">LED Colour</string><string name="preferences_led_colour_summary">Select the colour of the LED for notifications</string><string name="changesets_empty">There are no changesets available</string>
+<string name="changesets_title">Changesets</string>
+
+
+
+
+<string name="changesets_view_browser">View in browser</string><string name="changesets_send_message">Send @1 message</string><string name="changesets_link_contact">Link committer</string><string name="delete_repo_message">Are you sure you want to delete this repository?</string>
+<string name="delete_repo_title">Delete?</string>
+
+
+<string name="delete_repo_confirmation">Repository deleted</string>
+<string name="delete_repo_dialog_title">Deleting</string>
+<string name="delete_repo_dialog_message">Please wait...</string>
+
+
+<string name="add_repo_added_repo">Repository added</string>
+<string name="add_repo_invalid_url">Invalid URL</string>
+<string name="refresh">Refresh</string>
+<string name="broadcast_intent">ca.spencerelliott.mercury.REFRESH_CHANGESETS</string>
+
+<string name="version_info">0.8.0</string>
+<string name="version_info_extra">beta-contacts</string>
+
+<string name="invalid_intent">Invalid intent passed</string>
+
+
+
+<string name="changeset_view_commit_text">Commit text:</string>
+<string name="changeset_view_date">Date:</string>
+<string name="changeset_view_change_by">Changed By:</string>
+<string name="changeset_view_changes">Changes to:</string>
+<string name="changeset_view_title">View changeset</string>
+<string name="add_repo_updated_repo">Updated repository</string>
+<string name="add_repo_edit_title">Edit Repository</string>
+
+
+
+
+<string name="preferences_default_led_colour">-16711681</string>
+<string name="preferences_default_interval">1800000</string>
+<string name="search_label">Mercury</string>
+<string name="search_hint">Search changesets</string>
+<string name="search_results_empty">There were no results for your search</string>
+<string name="search_results_label">Search results</string>
+<string name="changesets_search_option">Search</string>
+
+</resources>

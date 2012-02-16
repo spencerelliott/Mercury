@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"><LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:paddingLeft="5dip" android:paddingRight="5dip" android:paddingTop="5dip"><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/changeset_view_commit_text" android:textStyle="bold"></TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Empty" android:id="@+id/changeset_view_commit_text"></TextView><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/changeset_view_date" android:textStyle="bold" android:paddingTop="10dip"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/changeset_view_date" android:text="Empty"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/changeset_view_change_by" android:paddingTop="10dip" android:textStyle="bold"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Empty" android:id="@+id/changeset_view_change_by"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/changeset_view_changes" android:textStyle="bold" android:paddingTop="10dip"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/changeset_view_changes" android:text="Empty"></TextView>
+</LinearLayout>
+
+
+</ScrollView>

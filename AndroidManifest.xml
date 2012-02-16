@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="ca.spencerelliott.mercury" android:versionName="@string/version_info" android:versionCode="8">
+    <application android:label="@string/app_name" android:icon="@drawable/logo" android:name="Mercury">
+        <activity android:name=".RepoBrowser"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            
+
+
+</intent-filter>
+        <intent-filter><action android:name="android.intent.action.VIEW"></action><category android:name="android.intent.category.DEFAULT"></category><data android:scheme="repo" android:host="ca.spencerelliott.mercury" android:pathPrefix="/browser"></data>
+
+</intent-filter>
+</activity>
+
+    <activity android:name=".AddRepository" android:label="@string/add_repo_title">
+</activity>
+<activity android:name=".Settings" android:label="@string/settings_title">
+</activity>
+<activity android:name=".Changesets" android:label="@string/changesets_title" android:configChanges="keyboardHidden|orientation" android:launchMode="standard">
+<intent-filter>
+    <action android:name="android.intent.action.SEARCH" />
+</intent-filter>
+<meta-data android:name="android.app.searchable" android:resource="@xml/searchable"></meta-data><intent-filter>
+	<action android:name="android.intent.action.VIEW"></action>
+	<category android:name="android.intent.category.DEFAULT"></category>
+	<data android:scheme="repo" android:host="ca.spencerelliott.mercury" android:pathPrefix="/changesets" android:path="\\*"></data>
+</intent-filter>
+
+
+
+</activity>
+<receiver android:name=".AlarmReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+<intent-filter>
+	<action android:name="ca.spencerelliott.mercury.REFRESH_CHANGESETS"></action>
+<action android:name="android.intent.action.BOOT_COMPLETED"></action>
+</intent-filter>
+</receiver>
+
+<service android:name=".ChangesetService" android:permission="android.permission.RECEIVE_BOOT_COMPLETED"></service>
+<activity android:name=".ChangesetViewer" android:label="@string/changeset_view_title"></activity>
+</application>
+    
+
+
+
+
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+<uses-sdk android:minSdkVersion="4"></uses-sdk>
+
+
+<uses-permission android:name="android.permission.VIBRATE"></uses-permission>
+
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"></uses-permission>
+
+
+
+
+
+
+<uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+</manifest> 

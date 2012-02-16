@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout android:id="@+id/add_repo_lin_layout" android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingLeft="5dip" android:paddingRight="5dip">
+	<EditText 
+		android:layout_height="wrap_content"
+		android:id="@+id/repo_name"
+		android:contentDescription="Repository name"
+		android:layout_width="fill_parent"
+		android:maxLines="1"
+		android:hint="@string/add_repo_name" android:layout_marginTop="5dip"/>
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/add_repo_label_repo_type"
+		android:id="@+id/repo_type_label"
+		android:layout_marginTop="5px" />
+	<Spinner
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/repo_type_spinner"/>
+	<TextView
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:text="@string/add_repo_url_label"
+		android:id="@+id/add_repo_url_text"/>
+	<EditText android:layout_height="wrap_content" android:id="@+id/add_repo_url" android:hint="@string/add_repo_url_hint" android:layout_width="fill_parent" android:layout_marginRight="50dip"/><TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/repo_authentication_label"
+		android:text="@string/add_repo_label_authentication"
+		android:layout_marginTop="5px" />
+	<Spinner
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/repo_authentication_spinner"/>
+	<LinearLayout android:layout_height="wrap_content" android:id="@+id/add_repo_authentication_layout" android:orientation="vertical" android:layout_width="fill_parent">
+		<EditText android:id="@+id/add_repo_username" 
+			android:hint="@string/add_repo_username_hint" 
+			android:layout_height="wrap_content" 
+			android:layout_width="fill_parent" 
+			android:layout_marginRight="50dip"/>
+		
+		<EditText android:layout_height="wrap_content" 
+			android:id="@+id/add_repo_password" 
+			android:hint="@string/add_repo_password_hint" 
+			android:layout_width="fill_parent" 
+			android:layout_marginRight="50dip"/>
+			
+		<EditText android:layout_height="wrap_content" 
+			android:id="@+id/add_repo_key" 
+			android:layout_width="fill_parent" 
+			android:hint="@string/add_repo_key_hint" 
+			android:visibility="gone" 
+			android:layout_marginRight="50dip" />
+	</LinearLayout>
+	
+	
+		
+	<LinearLayout android:layout_height="wrap_content" android:id="@+id/add_buttons_lin_layout" android:layout_marginTop="15dip" android:layout_width="fill_parent">
+		<Button 
+			android:layout_height="wrap_content" 
+			android:id="@+id/add_repo_save" 
+			android:hint="@string/add_repo_save_button" 
+			android:text="@string/add_repo_save_button" 
+			android:layout_marginRight="5px" 
+			android:width="150dip" 
+			android:layout_width="wrap_content"/>
+			
+		<Button 
+			android:layout_height="wrap_content" 
+			android:text="@string/add_repo_discard_button" 
+			android:id="@+id/add_repo_discard" 
+			android:layout_width="wrap_content" 
+			android:width="150dip" />
+	</LinearLayout>
+	
+
+
+</LinearLayout>
+</ScrollView>

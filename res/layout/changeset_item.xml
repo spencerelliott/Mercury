@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_height="wrap_content" android:orientation="vertical" android:layout_width="fill_parent" android:paddingRight="5dip" android:id="@+id/changesets_info_layout" android:paddingTop="10dip" android:paddingBottom="10dip" android:paddingLeft="8dip">
+
+
+	<TextView android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:textAppearance="?android:attr/textAppearanceMedium" 
+		android:text="Commit text" android:id="@+id/changesets_commit" />
+		
+	<TextView android:layout_width="wrap_content" 
+		android:layout_height="wrap_content" 
+		android:text="Revision/Date" 
+		android:id="@+id/changesets_info" 
+		android:layout_marginLeft="3dip" />
+
+</LinearLayout>

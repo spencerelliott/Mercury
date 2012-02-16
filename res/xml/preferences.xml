@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory android:title="Notifications"><CheckBoxPreference android:title="@string/preferences_notifications" android:key="notifications" android:summaryOn="@string/preferences_notifications_summary_on" android:summaryOff="@string/preferences_notification_summary_off" android:defaultValue="true" android:persistent="true"></CheckBoxPreference>
+<ListPreference android:dialogTitle="@string/preferences_notification_interval" android:title="@string/preferences_notification_interval" android:key="notification_interval" android:entries="@array/preferences_interval_entries" android:entryValues="@array/preferences_interval_values" android:summary="@string/preferences_notification_interval_summary" android:persistent="true" android:dependency="notifications" android:defaultValue="@string/preferences_default_interval"></ListPreference>
+
+<ListPreference android:key="led_colour" android:selectable="true" android:dependency="notifications" android:persistent="true" android:title="@string/preferences_led_colour_title" android:summary="@string/preferences_led_colour_summary" android:entryValues="@array/preferences_led_colours_values" android:entries="@array/preferences_led_colours_entries" android:enabled="true" android:defaultValue="@string/preferences_default_led_colour"></ListPreference>
+</PreferenceCategory>
+  
+  
+
+<PreferenceCategory android:enabled="true" android:title="Cache"><CheckBoxPreference android:title="@string/preferences_cache" android:key="caching" android:summaryOn="@string/preferences_cache_summary_on" android:summaryOff="@string/preferences_cache_summary_off" android:defaultValue="false" android:persistent="true"></CheckBoxPreference>
+<ListPreference android:title="@string/preferences_cache_max" android:key="max_changesets" android:summary="@string/preferences_cache_max_summary" android:persistent="true" android:entries="@array/preferences_cache_max_entries" android:entryValues="@array/preferences_cache_max_values" android:defaultValue="30" android:dependency="caching"></ListPreference>
+</PreferenceCategory>
+<PreferenceCategory android:title="@string/preferences_version_information"><Preference android:key="version" android:enabled="false" android:title="@string/preferences_version"></Preference>
+</PreferenceCategory>
+</PreferenceScreen>
